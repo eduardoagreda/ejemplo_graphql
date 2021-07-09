@@ -22,5 +22,4 @@ application = ProtocolTypeRouter({
     "websocket": URLRouter([
         path('graphql-ws/', GraphqlSubscriptionConsumer)
     ]),
-    # Just HTTP for now. (We can add other protocols later.)
 })

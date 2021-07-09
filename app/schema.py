@@ -19,4 +19,4 @@ class Subscription(TrackSubscription):
     pass
 
 
-schema = graphene.Schema(query=Query, mutation=Mutation, subscription=Subscription)
+schema = graphene.Schema(query=Query, mutation=Mutation, subscription=Subscription, auto_camelcase=False)
