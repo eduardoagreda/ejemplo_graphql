@@ -16,6 +16,7 @@ graphene-django==2.15.0
 graphene-subscriptions==1.0.2
 graphql-core==2.3.2
 graphql-relay==2.0.1
+gunicorn==20.1.0
 hyperlink==21.0.0
 idna==3.2
 incremental==21.3.0

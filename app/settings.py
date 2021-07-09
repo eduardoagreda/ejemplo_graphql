@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 GRAPHENE = {
     'SCHEMA': 'app.schema.schema',
+    'SUBSCRIPTION_PATH': '/graphql-ws/',
 }
 
 CHANNEL_LAYERS = {
