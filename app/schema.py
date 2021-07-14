@@ -1,4 +1,5 @@
-import graphene
+from graphene import ObjectType
+from graphene import Schema
 
 # Queries
 from apps.tracks.schema import Query as TrackQuery
@@ -9,14 +10,14 @@ from apps.tracks.mutations import Mutation as TrackMutations
 # Subscriptions
 from apps.tracks.subscriptions import TrackSubscription
 
-class Query(TrackQuery, graphene.ObjectType):
+class Query(TrackQuery, ObjectType):
     pass
 
-class Mutation(TrackMutations, graphene.ObjectType):
+class Mutation(TrackMutations, ObjectType):
     pass
 
 class Subscription(TrackSubscription):
     pass
 
 
-schema = graphene.Schema(query=Query, mutation=Mutation, subscription=Subscription, auto_camelcase=False)
+schema = Schema(query=Query, mutation=Mutation, subscription=Subscription, auto_camelcase=False)

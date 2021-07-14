@@ -4,4 +4,5 @@ from .models import Track
 
 class TrackType(DjangoObjectType):
     class Meta:
-        model = Track
+        model  = Track
+        fields = ('id', 'title', 'description', 'url', 'created_at')
