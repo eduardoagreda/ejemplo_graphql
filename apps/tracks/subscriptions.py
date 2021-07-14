@@ -1,6 +1,7 @@
 # Graphene
 from graphene import ObjectType
 from graphene import Field
+from graphene import List
 
 # Graphene Subscriptions
 from graphene_subscriptions.events import CREATED
